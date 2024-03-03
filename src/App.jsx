@@ -34,10 +34,12 @@ function App() {
       {data.map(event => {
         return (<Time key={event.year} year={event.year} event={event.event} />)
       })}
-      <input value={year} type='number' onChange={e => setYear(e.target.value)} />
+      <label htmlFor="Year">  Year</label>
+      <input value={year} type='number' placeholder='Enter year' onChange={e => setYear(e.target.value)} />
       <br /> 
       <br />
-      <input value={event} type='text' onChange={e => setEvent(e.target.value)} />
+      <label htmlFor="Event">Event</label>
+      <input value={event} type='text'  placeholder='Enter event' onChange={e => setEvent(e.target.value)} />
       <button onClick={handleClick}>save</button>
     </div>
   )

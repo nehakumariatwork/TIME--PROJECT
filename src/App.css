@@ -47,4 +47,8 @@ h1{
   background-color: aliceblue;
   size: 18px;
 }
-
+label{
+  background-color: bisque;
+  border-radius: 1px;
+  border: black solid 1px;
+}
